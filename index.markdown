@@ -4,6 +4,8 @@
 
 layout: home
 ---
-
-site.github: {{ site.github | jsonify }}   
-site.github 2: {{ site.github | inspect }}
+{% highlight json %}
+{% raw %}
+    {{ site.github | inspect }}
+{% endraw %}
+{% endhighlight %}
