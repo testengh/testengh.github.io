@@ -4,4 +4,4 @@
 
 layout: home
 ---
-{{ site.github | inspect }}
+{{ site.github | jsonify }}
